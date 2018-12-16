@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#F5F6F7</color>
+    <color name="colorTempCurrent">#2A2A2A</color>
+    <color name="colorPlaceCurrent">#556799</color>
+    <color name="colorRetryBtn">#4A4A4A</color>
+    <color name="colorFailedBg">#E85859</color>
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.main.MainActivity"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:showIn="@layout/activity_main">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latitude"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPlaceCurrent"
+                        android:fontFamily="@font/roboto_thin"/>
+
+                    <TextView
+                        android:id="@+id/lat_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latitude"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp"
+                        android:textColor="@color/colorPlaceCurrent"
+                        android:fontFamily="@font/roboto_black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Longitude"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPlaceCurrent"
+                        android:fontFamily="@font/roboto_thin"/>
+
+                    <TextView
+                        android:id="@+id/long_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Longitude"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp"
+                        android:textColor="@color/colorPlaceCurrent"
+                        android:fontFamily="@font/roboto_black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accuracy"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/colorPlaceCurrent"
+                android:fontFamily="@font/roboto_thin"/>
+
+            <TextView
+                android:id="@+id/acc_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accuracy"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textColor="@color/colorPlaceCurrent"
+                android:fontFamily="@font/roboto_black"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/colorPlaceCurrent"
+                android:fontFamily="@font/roboto_thin"/>
+
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textColor="@color/colorPlaceCurrent"
+                android:fontFamily="@font/roboto_black"/>
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/get_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="get GPS"
+                    android:backgroundTint="@color/colorTempCurrent"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/show_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="show GPS"
+                    android:backgroundTint="@color/colorTempCurrent"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progresssBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_loading"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
